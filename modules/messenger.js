@@ -1,7 +1,7 @@
 "use strict";
 
 let request = require('request'),
-    FB_PAGE_TOKEN = process.env.FB_PAGE_TOKEN;
+    FB_PAGE_TOKEN = "token";
 
 exports.send = (message, recipient) => {
     request({
