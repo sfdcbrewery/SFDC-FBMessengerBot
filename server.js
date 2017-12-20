@@ -6,7 +6,6 @@ var express = require('express'),
     handlers = require('./modules/handlers'),
     postbacks = require('./modules/postbacks'),
     uploads = require('./modules/uploads'),
-    FB_VERIFY_TOKEN = process.env.FB_VERIFY_TOKEN,
     app = express();
 
 app.set('port', process.env.PORT || 5000);
