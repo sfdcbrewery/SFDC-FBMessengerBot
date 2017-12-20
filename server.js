@@ -14,7 +14,7 @@ app.set('port', process.env.PORT || 5000);
 app.use(bodyParser.json());
 
 app.get('/webhook', (req, res) => {
-    if (req.query['hub.verify_token'] === FB_VERIFY_TOKEN) {
+    if (req.query['hub.verify_token'] === "token") {
         res.send(req.query['hub.challenge']);
     } else {
         res.send('Error, wrong validation token');
